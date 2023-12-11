@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <header>
-        <nav> 
+        <nav>
+            <h2>Portfolio</h2>
+            <label class="ham2" for="check">
+                <input class="ham--inp" id="check" type="checkbox" />
+            </label>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="Adventures.html">Adventures</a></li>
@@ -21,21 +38,26 @@
             </ul>
         </nav>
     </header>
-    <section>
-        Welcome. Just some information about myself
+    <section class="welcome">
+        <h1>Welcome. Just some information about myself</h1>
     </section>
-    <section>
-        <div>
-            <img width="300" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
-            <img width="300"  id = "sec-img" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
-            <p>My name is Fikreyohanes Abera Shibru. I am 20 years old currently. I was born in addis and lived there since. i finished my high school education at cruise school. Now I am learning sofware enginnering at AAiT. I'm now at my 3rd year. I think I am satisfied with my carrer choice because there is a lot more creativity and a lot to discover in this field.  </p>
-
+    <section class="bio">
+        <div class="bio__div bio--div--1">
+            <img class="bio__img" src="images/notebook-blue-wood-table.png" alt="">
+            <h3>My Story</h3>
         </div>
+        <div class="bio__div bio--div--2">
+            <img class="bio__img" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
+            <p class="bio__par">My name is Fikreyohanes Abera. I am 20 years old currently. I was born in addis and lived there since. I
+                finished my high school education at cruise school. Now I am learning sofware enginnering at AAiT. I'm
+                now at my 3rd year. I think I am satisfied with my carrer choice</p>
+        </div>
+
     </section>
-    <section>
-        <h1>Favorites</h1>
+    <h1 class="fav-text">Favorites</h1>
+    <section class="fav">
         <table>
-            <tr>
+            <tr class="first-row">
                 <th>Categories</th>
                 <th>Favorites</th>
                 <th>Least Favorites</th>
@@ -72,42 +94,59 @@
             </tr>
         </table>
     </section>
-    <section>
-        <h1>My future Plans</h1>
-        <figure>
-            <img width="95" height="90" src="images/11725.jpg" alt="">
-            <figcaption>AI developer</figcaption>
-        </figure>
+    <h1 class="lonely">My future Plans</h1>
+    <section class="Future">
+        <div class="Future--plans">
+            <div class="future--sec future--sec--1">
+                <img class="future__img" src="images/11725.png" alt="">
+                <h4 class="future-1">Data Scientist</h4>
+            </div>
+            <div class="future--sec future--sec--2">
+                <img class="confused future__img" src="images/Dec05-removebg-preview.png" alt="">
+            </div>
+            <div class="future--sec future--sec--3">
+                <img class="future__img" src="images/[removal.ai]_d090d94c-0989-475c-bc5d-465b83a8ba6f-blank_chalk_menu_street_blackboard_stand.png"
+                    alt="">
+                <h4 class="future-3">Designer</h4>
+            </div>
 
-        <img width="95" height="120" src="images/[removal.ai]_d090d94c-0989-475c-bc5d-465b83a8ba6f-blank_chalk_menu_street_blackboard_stand.png" alt="">
-        <h4>Data scientist</h4>
-        <img width="95" height="90" src="images/wooden-sign-with-symbol.jpg" alt="">
-        <h4>Designer</h4>
-        <aside>
-            Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.
+        </div>
 
-        </aside>
-        
+        <div class="thought">
+            <img class="future__img" src="images/wooden-sign-with-symbol.png" alt="">
+            <h4 class="future-2">AI Developer</h4>
+        </div>
+
     </section>
-
-
-    
 </body>
 
 <footer>
-    <p>Thank you for visiting my website.check out these links to explore further</p>
+    <p>Thank you for visiting my website. Check out these links to explore further</p>
     <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
         <li><a href="About.html">About</a></li>
+        <li><a href="contacts.html">Contact</a></li>
         <li><a href="Hobbies.html">Hobbies</a></li>
+        <li><a href="Adventures.html">Adventures</a></li>
+        <li><a href="Adventures.html">Skills</a></li>
     </ul>
+    <address class="footer-address">
+        <span><i class="fa-solid fa-phone"></i> +25141225499</span>
+        <span><i class="fa-solid fa-location-dot 2xl"></i>AAiT, 5 kilo
+            Addis Ababa
+            Ethiopia </span>
 
-    <div>
+        <span><i class="fa-solid fa-envelope"></i>
+            sampleemail@gmail.com</span>
+
+
+    </address>
+
+    <div class="social-media">
         <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
         <a href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
         <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-
     </div>
+    <p>@Copyright 2023</p>
 </footer>
+
 </html>
