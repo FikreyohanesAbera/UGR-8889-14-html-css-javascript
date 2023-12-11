@@ -2450,6 +2450,9 @@ footer>p {
     color: black;
     align-self: flex-start;
 }
+.contact-anchor:hover{
+    background-color: #F31559;
+}
 
 .Talk {
     grid-area: talk;
