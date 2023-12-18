@@ -8,131 +8,180 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
-  <body class="home--body">
-    <section class="mighty--wrapper">
-        <section class="wrapper--fir">
-            <section class="cube">
-                <main>
-                    <img class="cube__img" src="images/Fireworks_004.png" alt="fire-img">
-                    <h1 class="wrapper--fir__headers wrapper--fir--head1">CSS</h1>
-                    <h1 class="wrapper--fir__headers wrapper--fir--head2">Only</h1>
-                    <h1 class="wrapper--fir__headers wrapper--fir--head3">Portfolio</h1>
-                    <div class="cube__sides cube--ffront"></div>
-                    <div class="cube__sides cube--bback"></div>
-                    <div class="cube__sides cube--lleft"></div>
-                    <div class="cube__sides cube--rright"></div>
-                    <div class="cube__sides cube--uup"></div>
-                    <div class="cube__sides cube--ddown"></div>
-                </main>
-    
-            </section>
-    
-        </section>
-        <div class="overlap">
-            <h1 class="last-name">
-                <span class = "spanner"  style = "--wait:1">P</span>
-                <span class = "spanner" style = "--wait:2">U</span>
-                <span class = "spanner" style = "--wait:3">R</span>
-                <span class = "spanner" style = "--wait:4">E</span>
-                <span class = "spanner" >&nbsp;</span>
-                <span class = "spanner" style = "--wait:5">C</span>
-                <span class = "spanner" style = "--wait:6">S</span>
-                <span class = "spanner" style = "--wait:7">S</span>
-            </h1>
-            <div class = "just--scroll">
-                <div class="arrow arrow--1">
-                </div>
-                <div class="arrow arrow--2">
-                </div>
-                <div class="arrow arrow--3">
-                </div>
-            </div>
+  <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js" integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+      }
+    }
+  </script>
+  <body data-barba = "wrapper" class="home--body">
+    <!-- <ul class="animation">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul> -->
+    <div class="loading-container">
+        <div class="loading-screen">
         </div>
-    
-    
-        <header>
-            <nav>
-                <h2>Portfolio</h2>
-                <label class = "ham2" for="check">
-                    <input class="ham--inp" id="check" type="checkbox" />
-                </label>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="Adventures.html">Adventures</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Hobbies.html">Hobbies</a></li>
-                    <li><a href="contacts.html">Contact</a></li>
-    
-                </ul>
-            </nav>
-        </header>
-        <section class="wrapper">
-            <section class="intro">
-                <main class="another">
-                    <div class="name--holder">
-                        <h1 class="name">Hi There. I'm Fikreyohanes Abera</h1> 
+      </div>
+            <header>
+                <nav>
+                    <h2>Portfolio</h2>
+                    <label class = "ham2" for="check">
+                        <input class="ham--inp" id="check" type="checkbox" />
+                    </label>
+                    <ul>
+                        <li><a class="navbar__link" href="home.html">Home</a></li>
+                        <li><a class="navbar__link" href="Adventures.html">Adventures</a></li>
+                        <li><a class="navbar__link" href="skills.html">Skills</a></li>
+                        <li><a class="navbar__link" href="About.html">About</a></li>
+                        <li><a class="navbar__link" href="Hobbies.html">Hobbies</a></li>
+                        <li><a class="navbar__link" href="contacts.html">Contact</a></li>
+        
+                    </ul>
+                </nav>
+            </header>
+            <!-- <main data-barba="container" data-barba-namespace = "homepage"> -->
+    <main>
+        <section class="mighty--wrapper">
+            <section class="threeD">
+                <div class="popups">
+                  
+                    <div class="popup__items popup--about">
+                      <h1>About</h1>
+                      <a href="About.html">Go to About</a>
                     </div>
-                    <div class="container">
-                        <h1 class="container__header">I'm a </h1>
-                        <div class = "container--items">
-                            <h1 class = "container__items__header"> SOFTWARE ENGINNER</h1>
-                            <h1 class = "container__items__header"> SOFWARE DESIGNER</h1>
-                            <h1 class = "container__items__header"> WEBSITE DEVELOPER</h1>
+                    <div class="popup__items popup--skills">
+                      <h1>Skills</h1>
+                      <a href="skills.html">Go to Skills</a>
+                    </div>
+                    <div class="popup__items popup--Hobbies">
+                      <h1>Hobbies</h1>
+                      <a href="Hobbies.html">Go to Hobbies</a>
+                    </div>
+                    <div class="popup__items popup--adventures">
+                      <h1>Adventures</h1>
+                      <a href="Adventures.html">Go to Adventures</a>
+                    </div>
+                    <div class="popup__items popup--contact">
+                      <h1>Contact me</h1>
+                      <a href="contacts.html">Go to contacts</a>
+              
+                    </div>
+                    <div class="popup__items popup--disappear">
+                        <h1>Use W and S to interact</h1>
+                    </div>
+              
+                  </div>
+    
+            </section>
+
+        
+        
+            <!-- <header>
+                <nav>
+                    <h2>Portfolio</h2>
+                    <label class = "ham2" for="check">
+                        <input class="ham--inp" id="check" type="checkbox" />
+                    </label>
+                    <ul>
+                        <li><a class="navbar__link" href="home.html">Home</a></li>
+                        <li><a class="navbar__link" href="Adventures.html">Adventures</a></li>
+                        <li><a class="navbar__link" href="skills.html">Skills</a></li>
+                        <li><a class="navbar__link" href="About.html">About</a></li>
+                        <li><a class="navbar__link" href="Hobbies.html">Hobbies</a></li>
+                        <li><a class="navbar__link" href="contacts.html">Contact</a></li>
+        
+                    </ul>
+                </nav>
+            </header> -->
+            <section class="wrapper">
+                <section class="intro">
+                    <main class="another">
+                        <div class="name--holder">
+                            <h1 class="name">Hi There. I'm Fikreyohanes Abera</h1> 
                         </div>
+                        <div class="container">
+                            <h1 class="container__header">I'm a </h1>
+                            <div class = "container--items">
+                                <h1 class = "container__items__header"> SOFTWARE ENGINNER</h1>
+                                <h1 class = "container__items__header"> SOFWARE DESIGNER</h1>
+                                <h1 class = "container__items__header"> WEBSITE DEVELOPER</h1>
+                            </div>
+                
+                        </div>
+        
+                    </main>
+        
             
+                </section>
+                <section class="vessel">
+                    <div class="vessel__coder">
+                        <img class="coder__image coder--fir" src="images/pngfind.com-men-fashion-png-3292906.png" alt="">
+                        <img class="coder__image coder--secondd" src="images/klipartz.com.png" alt="">
+                    </div>
+                    <i id = "darrow" class="fa-solid fa-arrow-left"></i>
+                    <div class="switch">
+                        <button id = "togglebutton" class="switch__button">light</button>
                     </div>
     
-                </main>
-    
+                </section>
+         
         
             </section>
-            <section class="vessel">
-                <div class="vessel__coder">
-                    <img class="coder__image coder--fir" src="images/pngfind.com-men-fashion-png-3292906.png" alt="">
-                    <img class="coder__image coder--secondd" src="images/klipartz.com.png" alt="">
-                </div>
-                <i id = "darrow" class="fa-solid fa-arrow-left"></i>
-
-            </section>
-     
     
+        
+            
+            <section class="resume">
+                <h1 class = "my-res">My Resume</h1>
+                <section class="resume__sections resume--one">
+                    <figure class = "resume__fig">
+                        <img src="images/6502423.jpg" alt="img">
+                        <figcaption class="resume__caption">I have developed some cool projects and mini games in my Software career.</figcaption> 
+                    </figure>
+                    
+                </section>
+                <section class="resume__sections resume--two">
+                    <figure class = "resume__fig">
+                        <img src="images/1687.jpg" alt="img">
+                        <figcaption class="resume__caption"> I develop websites. some of my knowledge sets include css, SVG, Javascript and JQuery, React, Node, Express, SQL and mongoDB.
+                        </figcaption >
+            
+                    </figure>
+                </section>
+                <section class="resume__sections resume-three">
+                    <figure class = "resume__sections resume__fig">
+                        <img src="images/20943655.jpg" alt="img">
+                        <figcaption class="resume__caption">I really enjoy working with algorithms. I have spent sometime doing problems on leetcode. My experience is somehow a little different from most people. I learnt that if I took my time and do a little research if necessary, it's possible to solve any problem. Along the ways I learnt many techinques to solve problems of which my favorites are boyer-moore and floyd's cycle. I still look forward to explore more. 
+                            i'd love to have some friendly contents too.
+                        </figcaption>
+                    </figure>
+        
+                </section>
+    
+        
+        
+            </section>
         </section>
-    
-        
-        <section class="resume">
-            <h1 class = "my-res">My Resume</h1>
-            <section class="resume__sections resume--one">
-                <figure class = "resume__fig">
-                    <img src="images/6502423.jpg" alt="img">
-                    <figcaption class="resume__caption">I have developed some cool projects and mini games in my Software career.</figcaption> 
-                </figure>
-                
-            </section>
-            <section class="resume__sections resume--two">
-                <figure class = "resume__fig">
-                    <img src="images/1687.jpg" alt="img">
-                    <figcaption class="resume__caption"> I develop websites. some of my knowledge sets include css, SVG, Javascript and JQuery, React, Node, Express, SQL and mongoDB.
-                    </figcaption >
-        
-                </figure>
-            </section>
-            <section class="resume__sections resume-three">
-                <figure class = "resume__sections resume__fig">
-                    <img src="images/20943655.jpg" alt="img">
-                    <figcaption class="resume__caption">I really enjoy working with algorithms. I have spent sometime doing problems on leetcode. My experience is somehow a little different from most people. I learnt that if I took my time and do a little research if necessary, it's possible to solve any problem. Along the ways I learnt many techinques to solve problems of which my favorites are boyer-moore and floyd's cycle. I still look forward to explore more. 
-                        i'd love to have some friendly contents too.
-                    </figcaption>
-                </figure>
-    
-            </section>
-    
-        
-    
-        </section>
-    </section>
-    
 
+    </main>
+
+    <!-- <script src="https://unpkg.com/@barba/core"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/0.0.2/barba.min.js" integrity="sha512-j0ThLeHF8KI1DZjV/vAJ0CKkDAMAsZbFA1KarA2jIfzAmXn3di3krSq9LJrv/gBVsUnouKqS/agIoQpxj/3Hkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script> -->
+
+    
+   <script type = "module" src="js/home.js"></script>
+   <!-- <script src="js/pagetransition.js"></script> -->
 </body>
 
 <footer class="home--footer">
