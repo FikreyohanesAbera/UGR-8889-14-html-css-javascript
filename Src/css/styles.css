@@ -639,7 +639,7 @@ a {
     padding: 4%;
     width: max-content;
     color: white;
-    background-image: url(images/markus-spiske-cvBBO4PzWPg-unsplash.jpg);
+    background-image: url(Images/markus-spiske-cvBBO4PzWPg-unsplash.jpg);
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;
@@ -650,7 +650,7 @@ a {
 
 .spanner {
     display: inline-block;
-    background-image: url(../images/markus-spiske-cvBBO4PzWPg-unsplash.jpg);
+    background-image: url(../Images/markus-spiske-cvBBO4PzWPg-unsplash.jpg);
     background-size: cover;
     background-position: calc(var(--wait) * 50%) calc(var(--wait) * 10%);
     background-clip: text;
@@ -1811,7 +1811,7 @@ a {
 
 .debre-libanos {
     width: 45%;
-    -webkit-mask: url(../images/buhaha.png);
+    -webkit-mask: url(../Images/buhaha.png);
     -webkit-mask-size: 130%;
     -webkit-mask-position: 40% 32%;
     -webkit-mask-repeat: no-repeat;
@@ -1995,7 +1995,7 @@ details {
 
 .cover--img {
     width: 40%;
-    -webkit-mask-image: url(../images/test.png);
+    -webkit-mask-image: url(../Images/test.png);
     -webkit-mask-size: 105%;
     -webkit-mask-position: 50% 90%;
     -webkit-mask-repeat: no-repeat;
@@ -2052,7 +2052,7 @@ details {
     height: 100%;
     background-color: #101820;
     border-bottom: 3.125em solid;
-    border-image: url(../images/pseudo.png);
+    border-image: url(../Images/pseudo.png);
     border-image-slice:
         60% 0 0 0;
     border-image-width:
@@ -2359,7 +2359,7 @@ details {
 }
 
 .bio {
-    background-image: url(../images/workplace-with-smartphone-notebook-black-table-top-view.jpg);
+    background-image: url(../Images/workplace-with-smartphone-notebook-black-table-top-view.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2628,7 +2628,7 @@ footer>p {
 /* contacts */
 
 .contact--intro {
-    background-image: url(../images/89763.jpg);
+    background-image: url(../Images/89763.jpg);
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -2645,7 +2645,7 @@ footer>p {
 
 .con--address {
     font-family: 'Londrina Shadow', sans-serif;
-    background-image: url(../images/5043374.jpg);
+    background-image: url(../Images/5043374.jpg);
     background-size: cover;
     color: #CCCCFF;
     display: grid;
@@ -2730,7 +2730,7 @@ footer>p {
 }
 
 .act--skills {
-    background-image: url(../images/beautiful-shot-blue-purple-sky-filled-with-starts.jpg);
+    background-image: url(../Images/beautiful-shot-blue-purple-sky-filled-with-starts.jpg);
     background-size: cover;
     flex: 1;
     height: 100vh;
